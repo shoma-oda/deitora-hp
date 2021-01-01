@@ -1,0 +1,307 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #082B48;
+  line-height:1.5;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #082B48;
+}
+
+.container{
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+}
+
+.clear{
+
+  clear: both;
+}
+
+/*===================================
+header
+======================================*/
+
+.header-left{
+  float: left;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.header-title{
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.header-right{
+  float:right;
+  height: 90px;
+  display: flex;
+  align-items: center;
+
+}
+
+.header-nav{
+  display: flex;
+}
+
+.header-nav-item a{
+  font-weight: bold;
+  margin: 0px 30px;
+} 
+
+.header-nav-item  a:hover{
+  opacity: 0.6;
+}
+
+.header-nav {
+  list-style: none;
+}
+
+/*===================================
+section 共通クラス
+======================================*/
+
+.section-title{
+  padding: 60px 0px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+/*===================================
+top
+======================================*/
+
+.top{
+  background-image: url(/img/main-vsual-nontitle.png);
+  background-size: cover;
+  padding: 80px 0px;
+}
+.top-title{
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sub-title{
+  font-size: 18px;
+  text-align: center;
+}
+
+/*===================================
+about
+======================================*/
+
+.about-image{
+  float: left;
+  width: 48%;
+}
+
+.about-text{
+  float: right;
+  width: 48%;
+}
+
+.container{
+  clear: both;
+}
+
+/*===================================
+course
+======================================*/
+
+.course{
+  background-color: rgb(168, 245, 219);
+  clear: both;
+}
+
+
+.course-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-item{
+  width: 30%;
+  margin-bottom: 40px;
+}
+
+
+/*===================================
+contact
+======================================*/
+.contact-text{
+  text-align: center;
+}
+
+input[type=email] {
+  width: 600px;
+  height: 30px;
+  border: 3px solid #d8d8d8 ;
+  font-size: 18px;
+  display: block;
+  margin: auto;
+  padding: 30px;
+  border-radius:1999px;
+   margin-bottom: 40px;
+}
+
+.btn{
+ padding: 20px 60px;
+ display: inline-block;
+ background-color: #082b48;
+ color: white;
+ font-size: 24px;
+ font-weight:bold;
+ border-radius: 4px;
+}
+
+.btn:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.btn-register{
+ background-color: #ec6c64;
+ display: block;
+ margin: auto;
+}
+
+footer{
+  background-color: #08284b;
+  color:white;
+  padding: 20px 0px ;
+  height: 50px;
+  margin-top: 40px;
+}
+.copyright{
+  font-size: 12px;
+  float: right;
+}
+
+
+/*===================================
+スマホ用の表示
+======================================*/
+
+@media  (max-width:767px){
+
+/*===================================
+headerの表示
+======================================*/
+
+.header-left{
+  float:none;
+}
+
+.header-right{
+  float:none;
+}
+.header-title{
+  text-align: center;
+  margin: auto; 
+}
+
+.header-nav{
+  display: flex;
+  margin: auto; 
+}
+
+.header-nav-item{
+  float: none;
+}
+
+/*===================================
+topの表示
+======================================*/
+
+.top{
+  padding: 120px 0px;
+}
+
+.top-title{
+ font-size: 32px;
+
+}
+
+.sub-title{
+  font-size: 14px;
+}
+
+
+/*===================================
+section 共通クラス
+======================================*/
+.section{
+  padding: 80px 0px ;
+}
+
+.section-title{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*===================================
+aboutの表示
+======================================*/
+.about-left{
+  float: none;
+  margin-bottom: 20px;
+}
+
+.about-right{
+  float: none;
+}
+
+.about-image{
+  width: 100%;
+
+}
+
+.about-text{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/*===================================
+courseの表示
+======================================*/
+.course-wrapper{
+  flex-wrap: wrap;
+}
+.course-item{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/*===================================
+contactの表示
+======================================*/
+
+input[type=email] {
+  width: 100%;
+}
+
+/*===================================
+footerの表示
+======================================*/
+
+.copyright{
+  font-size: 10px;
+  float: none;
+  text-align:center;
+}
+
+}
